@@ -1,0 +1,13 @@
+# Stylometric appendix — notebooks (Python >= 3.10 recommended)
+# Install: pip install -r requirements.txt
+
+numpy>=1.23
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+scikit-learn-extra>=0.3.0
+umap-learn>=0.5.3
+matplotlib>=3.7
+seaborn>=0.13
+tqdm>=4.65
+pymorphy3>=2.0
