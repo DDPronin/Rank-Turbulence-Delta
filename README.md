@@ -157,7 +157,18 @@ The notebooks reproduce all experimental results reported in the paper, includin
 
 If you use this code or the accompanying experimental materials, please cite the published article:
 
-Pronin, D. and Kazartsev, E. (2026) “Rank-Turbulence Delta and Interpretable Approaches to Stylometric Delta Metrics,” *Digital Scholarship in the Humanities*. https://doi.org/10.1093/llc/fqag072
+> Pronin, D. and Kazartsev, E. (2026) “Rank-Turbulence Delta and Interpretable Approaches to Stylometric Delta Metrics,” *Digital Scholarship in the Humanities*. https://doi.org/10.1093/llc/fqag072
+
+```bibtex
+@article{pronin_kazartsev_2026_rank_turbulence_delta,
+  author  = {Pronin, Dmitry and Kazartsev, Evgeny},
+  title   = {Rank-Turbulence Delta and Interpretable Approaches to Stylometric Delta Metrics},
+  journal = {Digital Scholarship in the Humanities},
+  year    = {2026},
+  doi     = {10.1093/llc/fqag072},
+  url     = {https://doi.org/10.1093/llc/fqag072}
+}
+```
 
 ## Contact
 
