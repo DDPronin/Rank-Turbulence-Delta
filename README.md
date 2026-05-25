@@ -6,8 +6,6 @@ Dmitry Pronin and Evgeny Kazartsev, “Rank-Turbulence Delta and Interpretable A
 
 A preprint is available on arXiv: https://arxiv.org/abs/2604.19499
 
-Please cite the published version of record when using this repository.
-
 
 ## Overview
 
