@@ -1,16 +1,12 @@
 # Rank-Turbulence Delta and Interpretable Approaches to Stylometric Delta Measures
 
-This repository accompanies the article:
+This repository contains the code and experimental materials for the article:
 
-**"Rank-Turbulence Delta and Interpretable Approaches to Stylometric Delta Measures"**  
-Dmitry Pronin, Evgeny Kazartsev  
-HSE University 
+Dmitry Pronin and Evgeny Kazartsev, “Rank-Turbulence Delta and Interpretable Approaches to Stylometric Delta Metrics,” *Digital Scholarship in the Humanities*, 2026. https://doi.org/10.1093/llc/fqag072
 
-This Research is supported by Scientific Foundation of HSE-University in 2026, Faculty of Humanities project «Language, literature and culture in historical and social perspective»
+A preprint is available on arXiv: https://arxiv.org/abs/2604.19499
 
-The manuscript is currently under review at *Digital Scholarship in the Humanities*.
-
-You can see our preprint on arXiv: https://arxiv.org/abs/2604.19499
+Please cite the published version of record when using this repository.
 
 
 ## Overview
@@ -157,6 +153,11 @@ The notebooks reproduce all experimental results reported in the paper, includin
 - lexical contribution plots  
 - robustness diagnostics (Jaccard overlap, bootstrap stability)
 
+## Citation
+
+If you use this code or the accompanying experimental materials, please cite the published article:
+
+Pronin, D. and Kazartsev, E. (2026) “Rank-Turbulence Delta and Interpretable Approaches to Stylometric Delta Metrics,” *Digital Scholarship in the Humanities*. https://doi.org/10.1093/llc/fqag072
 
 ## Contact
 
