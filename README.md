@@ -32,6 +32,7 @@ repo/
 ├── russian_tf.ipynb
 ├── token_impact_validation.ipynb
 ├── requirements.txt
+├── smoke_test.py          # Quick dependency/import and PAM fit check
 └── README.md
 ```
 
@@ -117,29 +118,32 @@ All methods support **token-level contribution decomposition**, enabling interpr
 
 ### Environment
 
-Python ≥ 3.10 is recommended.
+Use Python 3.11. The setup below was verified on Linux x86-64 with Python
+3.11.18. Other platforms were not verified; in particular, the
+`scikit-learn-extra` 0.3.0 wheel may not be available for every platform.
 
-Core dependencies:
-
-- numpy  
-- pandas  
-- scipy  
-- scikit-learn  
-- scikit-learn-extra  
-- umap-learn  
-- matplotlib  
-- seaborn  
-- tqdm  
-- pymorphy3
-
-Install:
+From the repository root, create a fresh environment and check that the
+notebook dependencies can start:
 
 ```bash
-pip install -r requirements.txt
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python smoke_test.py
 ```
 
-To run the `.ipynb` files interactively, use JupyterLab or Notebook (`pip install jupyter`), or open them in an editor that integrates with your Python environment (for example, VS Code / Cursor with the Jupyter extension).
+The check imports the notebooks' KMedoids and UMAP entry points and fits a
+tiny synthetic PAM example. It does not need the corpus or reproduce the paper.
+The NumPy 1.x pin is intentional: the released `scikit-learn-extra` 0.3.0
+wheels use the NumPy 1.x ABI, while UMAP 0.6.0 requires NumPy 2.
 
+Before running notebooks that read the term-frequency matrices, install
+[Git LFS](https://git-lfs.com/) and run `git lfs install --local` and
+`git lfs pull` from a Git clone. A Git LFS pointer is not a usable matrix.
+
+To run the `.ipynb` files interactively, use JupyterLab (`python -m pip install jupyterlab`) or
+an editor with notebook support. Select the kernel from the same environment
+and run the notebooks from the repository root.
 
 ## Outputs
 
